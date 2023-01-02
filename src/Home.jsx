@@ -31,7 +31,7 @@ export default function Home() {
         setFetchedData(data.orders.reverse());
         console.log(data);
       });
-  }, []);
+  });
 
   const handleCreateClick = () => {
     navigate("/catelog");
