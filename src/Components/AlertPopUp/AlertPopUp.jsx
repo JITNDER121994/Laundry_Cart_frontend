@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AlertPopUp.css";
 import danger from "./danger.png";
+import { Link } from 'react-router-dom'
 
 export default function AlertPopUp() {
   const [modal, setModal] = useState(false);
@@ -32,10 +33,9 @@ export default function AlertPopUp() {
                 Are you sure want to cancel the Order No:ORD1
               </p>
             </div>
-            <a href="/home"><button className="alert_btn" onClick={toggleModal}>
-              Proceed
-            </button>
-            </a>
+            <Link to="/home">
+                   <button className="alert_btn" onClick={toggleModal}> Proceed</button>
+               </Link>
           </div>
         </div>
       )}
