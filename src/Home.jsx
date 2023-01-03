@@ -31,7 +31,7 @@ export default function Home() {
         setFetchedData(data.orders.reverse());
         console.log(data);
       });
-  });
+  }, []);
 
   const handleCreateClick = () => {
     navigate("/catelog");
@@ -60,7 +60,7 @@ export default function Home() {
             <div
               style={{
                 display: "inline-block",
-                borderBottom: "1px solid gray",  
+                borderBottom: "1px solid gray",
               }}
             >
               <img src="./icons/search.svg" alt="search" />
