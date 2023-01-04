@@ -161,6 +161,16 @@ const RegisterPage = () => {
           navigate("/", { replace: true });
         } else {
           alert("Registration Successful");
+          setUserData({
+            name: "",
+            email: "",
+            phoneNumber: "",
+            state: "",
+            district: "",
+            address: "",
+            pincode: "",
+            password: "",
+          })
         }
       })
       .catch((e) => {
